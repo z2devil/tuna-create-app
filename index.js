@@ -24,7 +24,7 @@ const spinner = ora();
 const loadTemplates = async () => {
   spinner.start('正在加载模板列表...');
   try {
-    const { data: templates } = await service.get(process.env.ROOT + '1');
+    const { data: templates } = await service.get(process.env.ROOT);
     spinner.stop();
     return templates;
   } catch (error) {
