@@ -5,12 +5,17 @@ import axios from 'axios';
 import { program } from 'commander';
 import prompts from 'prompts';
 import ora from 'ora';
+// import packageJSON from './package.json' assert { type: 'json' };
+
+// const packageJSON = require('./package.json');
 
 // import path from path;
 // import fs from fs;
 // import util from util;
 // import { ChildProcess } from 'child_process';
 // const exec = util.promisify(ChildProcess.exec);
+
+import { readFile } from 'fs/promises';
 
 dotenv.config();
 
@@ -20,6 +25,10 @@ const service = axios.create({
 });
 
 const spinner = ora();
+
+const packageJSON = JSON.parse(
+  await readFile(new URL('./package.json', import.meta.url))
+);
 
 const loadTemplates = async () => {
   spinner.start('正在加载模板列表...');
@@ -42,10 +51,10 @@ const loadTemplates = async () => {
   }
 };
 
-program.version(process.env.VERSION);
+program.version(packageJSON.version);
 
 program
-  .command(process.env.COMMAND)
+  .command(packageJSON.name)
   .description('Create a new app')
   .action(async () => {
     const { projectName } = await prompts({

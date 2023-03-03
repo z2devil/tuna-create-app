@@ -2,17 +2,16 @@
   "name": "tuna-create-app",
   "version": "0.1.1",
   "description": "",
+  "type": "module",
   "files": [
     "index.js"
   ],
   "bin": {
     "tuna-create-app": "./index.js"
   },
-  "mian": "./index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js create-app"
+    "start": "node index.js tuna-create-app"
   },
   "keywords": [],
   "author": "z2devil",
