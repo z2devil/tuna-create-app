@@ -1,5 +1,11 @@
 # tuna-create-app
 
+## 1.0.1
+
+### Patch Changes
+
+- 修改 package.json files 属性
+
 ## 1.0.0
 
 ### Major Changes
