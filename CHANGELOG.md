@@ -1,5 +1,17 @@
 # tuna-create-app
 
+## 1.1.1
+
+### Patch Changes
+
+- 修改 readme
+
+## 1.1.0
+
+### Minor Changes
+
+- 添加 readme 文件，添加 npmjs 中的 git 仓库地址
+
 ## 1.0.1
 
 ### Patch Changes

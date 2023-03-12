@@ -3,18 +3,11 @@ Tuna Create App 是一个命令行工具，可以让您基于模板库中的模�
 
 简体中文 | [English](https://github.com/z2devil/tuna-create-app/blob/master/README.md)
 
-# 安装
-您可以使用 NPM 安装 Tuna Create App：
-
-```bash
-npm install -g tuna-create-app
-```
-
 # 使用方法
 要创建一个新项目，请运行以下命令：
 
 ```bash
-tuna-create-app my-app
+npx tuna-create-app my-app
 ```
 
 将使用 my-app 为项目的名称进行项目创建。

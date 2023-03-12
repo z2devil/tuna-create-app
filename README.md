@@ -3,18 +3,11 @@ Tuna Create App is a command-line tool that allows you to create a new project b
 
 English | [简体中文](https://github.com/z2devil/tuna-create-app/blob/master/README-zh_CN.md)
 
-# Installation
-You can install Tuna Create App using NPM:
-
-```bash
-npm install -g tuna-create-app
-```
-
 # Usage
 To create a new project, run the following command:
 
 ```bash
-tuna-create-app my-app
+npx tuna-create-app my-app
 ```
 
 The project will be created using the name my-app. 
